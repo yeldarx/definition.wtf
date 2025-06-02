@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+
+{% block title %}{{ title }} – Definition.wtf{% endblock %}
+
+{% block content %}
+  <article class="definition-content">
+    <h1>{{ title }}</h1>
+
+    {% if definition %}
+      <p class="definition-short">{{ definition | safe }}</p>
+    {% endif %}
+
+    <div class="definition-body">
+      {{ content | safe }}
+    </div>
+
+    {# {% include "faq/which-faq.njk" %} #}
+
+    <p class="definition-updated">
+      <em>Last updated: {{ page.inputPath | lastUpdated }}</em>
+    </p>
+
+    <script src="https://utteranc.es/client.js"
+            repo="yeldarx/definition.wtf"
+            issue-term="title"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+  </article>
+{% endblock %}

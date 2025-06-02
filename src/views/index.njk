@@ -1,0 +1,15 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+{% set langCode = lang or 'en' %}
+
+  {% set t = i18n[langCode] %}
+
+  {% for def in collections.definitions | filterByLang(langCode) %}
+    <section class="definition-block">
+      <h2>{{ def.data.title }}</h2>
+      <p>{{ def.data.definition | safe }} <a href="{{ def.url }}">{{ t.readMore }} →</a></p>
+    </section>
+  {% endfor %}
+{% endblock %}

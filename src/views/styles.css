@@ -1,0 +1,128 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+.header {
+    padding: 2rem 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+.title {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+.title span {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+
+.title span a {
+    color: inherit;
+    text-decoration: underline dotted;
+  }
+  
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rss-icon-link svg {
+  display: block;
+  margin-left: 0.4rem;
+  width: 20px;
+  height: 20px;
+  transition: opacity 0.2s ease;
+  opacity: 0.8;
+}
+
+.rss-icon-link:hover svg {
+  opacity: 1;
+}
+
+
+.definitions {
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+.definition-block {
+    margin-bottom: 2rem;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 1rem;
+  }
+  
+.definition-block h2 {
+    margin-top: 0;
+  }
+  
+.read-more {
+    display: inline-block;
+
+  }
+  
+.footer {
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-question {
+  background-color: #f5f5f5;
+  padding: 0.75rem 1rem;
+  border: none;
+  width: 100%;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #eaeaea;
+}
+
+.faq-question.active {
+  background-color: #e0e0e0;
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease;
+  background: #fcfcfc;
+  padding: 0 1rem;
+  border-radius: 0 0 6px 6px;
+  font-size: 0.9rem;
+}
+
+.faq-answer p {
+  margin: 0.75rem 0;
+}

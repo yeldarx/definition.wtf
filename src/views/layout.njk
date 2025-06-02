@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}The Definition{% endblock %}</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+<header class="header">
+  <h1 class="title">
+    <a href="/">The Definition</a>
+        {% if lang == 'kz' %}
+          : <a href="/kz/">Қазақша</a>
+        {% endif %}
+  </h1>
+  <nav class="nav">
+    <a href="/blog/">Blog</a>
+    <a href="https://feed.definition.wtf/blog" class="rss-icon-link" aria-label="RSS feed">
+      <svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512" width="20" height="20" aria-hidden="true"
+        style="border-radius: 4px;">
+        <rect width="512" height="512" opacity="0.9" rx="15%" fill="#f80"/>
+        <circle cx="145" cy="367" r="35" fill="#ffffff"/>
+        <path fill="none" stroke="#ffffff" stroke-width="60"
+          d="M109 241c89 0 162 73 162 162m114 0c0-152-124-276-276-276"/>
+      </svg>
+    </a>
+  </nav>
+</header>
+
+<main class="definitions">
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+{# <a href="/">English</a> | <a href="/kz/">Қазақша</a> #}
+
+  <p>© 2025 The Definition | 
+  {% if page.inputPath %}
+    <a href="https://github.com/yeldarx/definition.wtf/blob/main/{{ page.inputPath | replace('./', '') }}">
+      This page on GitHub →
+    </a>
+  {% endif %}
+  </p>
+</footer>
+
+</body>
+</html>

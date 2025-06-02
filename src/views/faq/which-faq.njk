@@ -1,0 +1,9 @@
+{# src/views/faq/which-faq.njk #}
+
+{% set path = page.url or '' %}
+
+{% if path.startsWith('/podcasting/') %}
+  {% include "faq/faq-podcasting.njk" %}
+{% elif path.startsWith('/podcast/') %}
+  {% include "faq/faq-podcast.njk" %}
+{% endif %}

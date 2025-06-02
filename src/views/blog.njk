@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+
+{% block title %}The Definition – Blog{% endblock %}
+
+{% block content %}
+
+  {% set t = i18n[langCode] %}
+
+  {% for def in collections.posts %}
+    <section class="definition-block">
+      <h2><a href="{{ def.url }}">{{ def.data.title }}</a></h2>
+      <p>{{ def.data.short }} 
+      <a href="{{ def.url }}" class="read-more">Read More →</a></p>
+    </section>
+  {% endfor %}
+
+{% endblock %}

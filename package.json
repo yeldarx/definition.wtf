@@ -1,0 +1,13 @@
+{
+  "name": "definition.wtf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "author": "Yeldar Kudaibergenov",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.4"
+  }
+}

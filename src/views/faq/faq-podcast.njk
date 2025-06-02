@@ -1,0 +1,23 @@
+<section class="faq">
+  <h2>FAQ</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">Question</button>
+    <div class="faq-answer">
+      <p>An answer.</p>
+    </div>
+  </div>
+
+<script>
+  document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+      const answer = button.nextElementSibling;
+      button.classList.toggle("active");
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+    });
+  });
+</script>

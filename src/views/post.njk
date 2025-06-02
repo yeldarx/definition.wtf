@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block title %}{{ title }} – The Definition Blog{% endblock %}
+
+{% block content %}
+  <article>
+    <h1>{{ title }}</h1>
+    {% if date %}
+      <p><time datetime="{{ date | date('yyyy-LL-dd') }}">{{ date | date('dd LLL yyyy') }}</time></p>
+    {% endif %}
+
+    {{ content | safe }}
+  </article>
+
+  <p class="definition-updated">
+    <em>Last updated: {{ page.inputPath | lastUpdated }}</em>
+  </p>
+
+  <script src="https://utteranc.es/client.js"
+          repo="yeldarx/definition.wtf"
+          issue-term="title"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
+{% endblock %}
