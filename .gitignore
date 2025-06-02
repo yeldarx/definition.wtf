@@ -27,9 +27,3 @@ Desktop.ini
 .idea/
 *.sublime-workspace
 *.sublime-project
-
-git init
-git commit -m "init commit"
-git branch -M main
-git remote add origin git@github.com:yeldarx/definition.wtf.git
-git push -u origin main

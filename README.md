@@ -37,7 +37,7 @@ layout: definition.njk
 ## Run locally
 
 ```bash
-git clone https://github.com/yourname/definition.wtf.git
+git clone https://github.com/yeldarx/definition.wtf.git
 cd definition.wtf
 npm install
 npm start
