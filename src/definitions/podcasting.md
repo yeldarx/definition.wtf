@@ -1,7 +1,8 @@
 ---
 title: What is podcasting?
-permalink: /podcasting/
 definition: Podcasting is the distribution of media files via an RSS feed with an <code>&lt;enclosure&gt;</code> element. These are usually audio or video files. In this context, an RSS feed using the <code>&lt;enclosure&gt;</code> element isn’t just a technical choice — it’s a foundation for freedom and independence.
+permalink: /podcasting/
+order: 1
 lang: en
 layout: definition.njk
 ---

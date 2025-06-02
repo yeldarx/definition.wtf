@@ -1,10 +1,10 @@
 ---
 title: What is RSS?
 definition: RSS is a Web content syndication format. Its name is an acronym for Really Simple Syndication. RSS is a dialect of XML. All RSS files must conform to the XML 1.0 specification, as published on the World Wide Web Consortium (W3C) website.
-lang: en
 permalink: /rss/
+order: 3
+lang: en
 layout: definition.njk
-slug: podcast
 ---
 
 In simpler terms, RSS is a way for websites to share their updates automatically. Instead of checking a site every day to see if there’s something new, you can subscribe to its RSS feed — and get updates delivered to you, just like messages. RSS is written in a format called XML, which is just a structured way to describe content so that computers — and apps — can understand it.

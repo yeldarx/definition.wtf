@@ -6,7 +6,7 @@
 
   {% set t = i18n[langCode] %}
 
-  {% for def in collections.definitions | filterByLang(langCode) %}
+  {% for def in collections.definitions | filterByLang(langCode) | sort(attribute="data.order") %}
     <section class="definition-block">
       <h2>{{ def.data.title }}</h2>
       <p>{{ def.data.definition | safe }} <a href="{{ def.url }}">{{ t.readMore }} →</a></p>

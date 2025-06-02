@@ -1,10 +1,10 @@
 ---
 title: What is a podcast?
 definition: A podcast is a media files that is distributed through an RSS feed using the <code>&lt;enclosure&gt;</code> element. These are typically audio or video files — they become podcasts when they are distributed through podcasting.
-lang: en
 permalink: /podcast/
+order: 2
+lang: en
 layout: definition.njk
-slug: podcast
 ---
 
 The main confusion in defining a podcast stems from the tendency to conflate the media file with its content. Many people assume a podcast is a specific *genre* or *format* — for example, a casual conversation, an interview, a narrative, or an investigative series.
