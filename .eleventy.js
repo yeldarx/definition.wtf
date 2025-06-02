@@ -18,8 +18,8 @@ module.exports = function (eleventyConfig) {
       return "Unknown";
     }
   });
-  eleventyConfig.addPassthroughCopy({ "src/views/styles.css": "styles.css" });
-  eleventyConfig.addPassthroughCopy({ "src/views/favicon.ico": "favicon.ico" });
+  eleventyConfig.addPassthroughCopy({ "src/_includes/styles.css": "styles.css" });
+  eleventyConfig.addPassthroughCopy({ "src/_includes/favicon.ico": "favicon.ico" });
   eleventyConfig.addFilter("filterByLang", (items, lang) => {
     return items.filter(item => item.data.lang === lang);
   });
@@ -37,7 +37,7 @@ module.exports = function (eleventyConfig) {
   return {
     dir: {
       input: "src",
-      includes: "views",
+      includes: "_includes",
       data: "_data",
       output: "public"
     },
