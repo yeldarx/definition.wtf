@@ -31,4 +31,4 @@ I’m building this as an open project. If you see a way to say something more c
 
 Thanks for reading.
 
-— Yeldar Kudaibergenov
+— Yeldar Kudaibergen
